@@ -41,3 +41,5 @@ Output = uint8(Output);
 subplot(1,3,3);
 imshow(Output);
 
+f1 = fft2(uint8(lena_gray));
+f2 = f1 * gauss_fft;
