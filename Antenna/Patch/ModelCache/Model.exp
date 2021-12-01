@@ -1,0 +1,15 @@
+@CACHEFILEVERSION 2
+@DOUBLE
+-(90.0#)
+-90
+-length/2#
+-10
+0#-0.5#*2.38#
+-1.19
+0.5#*2.38#
+1.19
+length/2#
+10
+xp(2#)
+0
+@LONG

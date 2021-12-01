@@ -1,0 +1,19 @@
+[Version]
+2
+[Author]
+HaiSon
+[Mesh Cells]
+54,575
+[Mesh Type]
+Hexahedral
+[Last Problem Type]
+High Frequency
+[Last Solver Type]
+HF Time Domain
+[Last Solver Type Abb]
+t
+[Results]
+Time Domain: S-Parameter
+[Modeler Unique ID]
+5:microstrip.cst?b0cea2666624793fe9550adfa7211377?17194:numberofparameters=1:port=1>mode=1>zre=0>zim=0:::l
+[Comment]

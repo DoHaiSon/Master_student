@@ -1,0 +1,17 @@
+[Version]
+2
+[Author]
+HaiSon
+[Mesh Cells]
+
+[Mesh Type]
+Tetrahedral
+[Last Problem Type]
+High Frequency
+[Last Solver Type]
+HF Frequency Domain
+[Last Solver Type Abb]
+f
+[Results]
+Unavailable
+[Comment]

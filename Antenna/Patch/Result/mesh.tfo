@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CST3DFieldViewInfoText creator="" version="20140203">
+  <Title data=" Mesh" type=" Mesh"/>
+  <TextItem name="Mesh Group_tag">
+    <Text visible="true" label="Mesh Group" data="$ifxNavigationModule@InfoText$" condition="" numberFormat="g" numberPrecision="4"/>
+  </TextItem>
+  <TextItem name="Tetrahedrons_tag">
+    <Text visible="true" label="Tetrahedrons" data="0" condition="" numberFormat="g" numberPrecision="4"/>
+  </TextItem>
+  <TextItem name="Symmetry Planes_tag">
+    <Text visible="true" label="Symmetry Planes" data="none" condition="" numberFormat="g" numberPrecision="4"/>
+  </TextItem>
+  <TextItem name="Min. edge length_tag">
+    <Text visible="false" label="Min. edge length" data="0" condition="" numberFormat="g" numberPrecision="4"/>
+  </TextItem>
+  <TextItem name="Max. edge length_tag">
+    <Text visible="false" label="Max. edge length" data="0" condition="" numberFormat="g" numberPrecision="4"/>
+  </TextItem>
+  <TextItem name="Min. Quality_tag">
+    <Text visible="false" label="Min. Quality" data="0" condition="" numberFormat="g" numberPrecision="4"/>
+  </TextItem>
+  <TextItem name="Max. Quality_tag">
+    <Text visible="false" label="Max. Quality" data="0" condition="" numberFormat="g" numberPrecision="4"/>
+  </TextItem>
+  <TextItem name="Average Quality_tag">
+    <Text visible="false" label="Average Quality" data="0" condition="" numberFormat="g" numberPrecision="4"/>
+  </TextItem>
+</CST3DFieldViewInfoText>

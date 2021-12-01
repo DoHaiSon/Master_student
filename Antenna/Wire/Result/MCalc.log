@@ -1,0 +1,145 @@
+<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2021 Oct 07 (Thu): 20:22:38
+<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+======================
+Mesher selection: FPBA
+======================
+
+=========================================================================================================================
+matrixcalc: Thread pinning failed with error: error in initialization of cpu core iterator, invalid socket id provided, 1
+=========================================================================================================================
+
+========================================================================
+Processing CAD model (for field results)
+	[Improved internal geometry representation]
+	[Accuracy improvement for long shapes in inhomogeneous mesh regions]
+Version 2018.0 (build 20171026)
+PBA version 20171026
+2021 Oct 07 (Thu): 20:22:38
+========================================================================
+
+===========================================
+Finished CAD processing (for field results)
+===========================================
+
+========================================================================
+Processing CAD model
+	[Improved internal geometry representation]
+	[Accuracy improvement for long shapes in inhomogeneous mesh regions]
+Version 2018.0 (build 20171026)
+PBA version 20171026
+2021 Oct 07 (Thu): 20:22:38
+========================================================================
+
+----------------------------------------------
+Used point accuracy enhancement value: 75.00%.
+----------------------------------------------
+
+=============================================================================
+Mesh statistics:
+-----------------------------------------------------------------------------
+Minimum edge length (x): 0.148 @ mesh line 11 (x)
+Maximum edge length (x): 6.26 @ mesh line 22 (x)
+Minimum face area (x): 0.026 @ mesh lines 11 | 27 (y | z)
+Maximum face area (x): 35.5 @ mesh lines 23 | 55 (y | z)
+Minimum edge length (y): 0.148 @ mesh line 11 (y)
+Maximum edge length (y): 5.96 @ mesh line 23 (y)
+Minimum face area (y): 0.026 @ mesh lines 27 | 11 (z | x)
+Maximum face area (y): 37.3 @ mesh lines 55 | 22 (z | x)
+Minimum edge length (z): 0.176 @ mesh line 27 (z)
+Maximum edge length (z): 5.96 @ mesh line 55 (z)
+Minimum face area (z): 0.0218 @ mesh lines 11 | 11 (x | y)
+Maximum face area (z): 37.3 @ mesh lines 22 | 23 (x | y)
+Maximum mesh face aspect ratio (x): 40.3 : 1.0  @ mesh lines 11 | 55 (y | z)
+Maximum mesh face aspect ratio (y): 40.3 : 1.0  @ mesh lines 55 | 11 (z | x)
+Maximum mesh face aspect ratio (z): 42.4 : 1.0  @ mesh lines 22 | 11 (x | y)
+=============================================================================
+
+=============================================================================
+Available resources to store TST cells: 2147449447 (6279091.95% of mesh size)
+=============================================================================
+
+=======================
+Finished CAD processing
+=======================
+
+------------------------------------------------------------
+Parallelization Info
+------------------------------------------------------------
+Number of concurrent threads: 1
+Number of node domains: 1
+Number of mesh cells: 30912
+------------------------------------------------------------
+Node order
+0
+------------------------------------------------------------
+
+1xN000:  <<<<<<<<<<<<<<<<<<<<<<<<<<<
+         2021 Oct 07 (Thu): 20:22:38
+         <<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+1xN000:  =========================================================================================================================
+
+         matrixcalc: Thread pinning failed with error: error in initialization of cpu core iterator, invalid socket id provided, 1
+         =========================================================================================================================
+
+1xN000:  ===============================
+         Matrix computation (PBA)
+         Version 2018.0 (build 20171026)
+         PBA version 20171026
+         2021 Oct 07 (Thu): 20:22:39
+         ===============================
+
+1xN000:  Shapes are ordered to support shape wise matrix storage
+1xN000:  ssssssssssssssssssssssssssssssssssssssssss
+         # of curls with SI accuracy enhancement: 0
+         ssssssssssssssssssssssssssssssssssssssssss
+
+1xN000:  ------------------------------------------------------------------------------
+         PBA fill limit is applied in inverse mode.
+         PBA fill limit is applied on faces filled with at least 99.00% metal material.
+         --------------------------------------------------------------
+         detailed accuracy settings:
+         --------------------------------------------------------------
+         augmented fill limit:       true
+         augmented fill limit value: 99.00
+         automatic fill limit:       true
+         early fill limit:           true
+         inverse fill limit:         true
+         model complexity:           0.00
+         legacy 2015:                false
+         fixed point accuracy:       false
+         minimum point accuracy:     0
+         mesh step inheritance:      false
+         accuracy mode:
+         ------------------------------------------------------------------------------
+
+1xN000:  discrete face port "1" is connected to metal material.
+1xN000:  ----------------------------------------------------------------
+         The following discrete face port is connected to metal material:
+         	1
+         ----------------------------------------------------------------
+
+1xN000:  =================================
+         Finished matrix computation (PBA)
+         =================================
+
+1xN000:  >>>>>>>>>>>>>>>>>>>>>>>>>>>
+         2021 Oct 07 (Thu): 20:22:41
+         >>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2021 Oct 07 (Thu): 20:22:41
+>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+--------------------------------
+# of staircase filled cells: 0
+# of staircase filled areas: 0
+# of staircase filled edges: 0
+# of faces above fill limit: 0
+# of edges with FPBA topology: 0
+--------------------------------
+

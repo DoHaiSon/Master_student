@@ -1,0 +1,19 @@
+[Version]
+2
+[Author]
+HaiSon
+[Mesh Cells]
+30,912
+[Mesh Type]
+Hexahedral
+[Last Problem Type]
+High Frequency
+[Last Solver Type]
+HF Time Domain
+[Last Solver Type Abb]
+t
+[Results]
+Time Domain: S-Parameter
+[Modeler Unique ID]
+5:wire.cst?43168c2dada7054d61c84e109bdf355b?17191:numberofparameters=3:port=1>mode=1>zre=0>zim=0:::l?r?g
+[Comment]
