@@ -228,13 +228,10 @@ Port.Delete "1"
 42
 [end]block_index
 [start]command
-
 '@ activate local coordinates
-
 [end]command
 [start]content
 WCS.ActivateWCS "local"
-
 [end]content
 [start]recover_picks
 0
@@ -248,13 +245,10 @@ WCS.ActivateWCS "local"
 43
 [end]block_index
 [start]command
-
 '@ activate global coordinates
-
 [end]command
 [start]content
 WCS.ActivateWCS "global"
-
 [end]content
 [start]recover_picks
 0
@@ -268,13 +262,10 @@ WCS.ActivateWCS "global"
 46
 [end]block_index
 [start]command
-
 '@ activate local coordinates
-
 [end]command
 [start]content
 WCS.ActivateWCS "local"
-
 [end]content
 [start]recover_picks
 0
@@ -290,9 +281,7 @@ WCS.ActivateWCS "local"
 [start]command
 [end]command
 [start]content
-
 Solid.Delete "component1:Patch2"
-
 [end]content
 [start]recover_picks
 1
@@ -308,13 +297,9 @@ Solid.Delete "component1:Patch2"
 [start]command
 [end]command
 [start]content
-
 Solid.Delete "component1:Patch3"
-
 Solid.Delete "component1:Patch3"
-
 Solid.Delete "component1:Patch3"
-
 [end]content
 [start]recover_picks
 1
@@ -330,9 +315,7 @@ Solid.Delete "component1:Patch3"
 [start]command
 [end]command
 [start]content
-
 Solid.Delete "component1:Patch4"
-
 [end]content
 [start]recover_picks
 1
@@ -348,9 +331,7 @@ Solid.Delete "component1:Patch4"
 [start]command
 [end]command
 [start]content
-
 Solid.Delete "component1:Patch5"
-
 [end]content
 [start]recover_picks
 1
@@ -366,11 +347,8 @@ Solid.Delete "component1:Patch5"
 [start]command
 [end]command
 [start]content
-
 Solid.Delete "component1:Patch6"
-
 Solid.Delete "component1:Patch6"
-
 [end]content
 [start]recover_picks
 1
@@ -386,13 +364,9 @@ Solid.Delete "component1:Patch6"
 [start]command
 [end]command
 [start]content
-
 Solid.Delete "component1:Patch7"
-
 Solid.Delete "component1:Patch7"
-
 Solid.Delete "component1:Patch7"
-
 [end]content
 [start]recover_picks
 1
@@ -403,22 +377,170 @@ Solid.Delete "component1:Patch7"
 [end]undo_item
 [start]undo_item
 [start]block_index
-61
+62
 [end]block_index
 [start]command
 [end]command
 [start]content
-
-Solid.Delete "component1:Patch8"
-
-Solid.Delete "component1:Patch8"
-
 [end]content
 [start]recover_picks
 1
 [end]recover_picks
 [start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+64
+[end]block_index
+[start]command
+[end]command
+[start]content
+[end]content
+[start]recover_picks
+0
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+65
+[end]block_index
+[start]command
+[end]command
+[start]content
+[end]content
+[start]recover_picks
+0
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+66
+[end]block_index
+[start]command
+[end]command
+[start]content
+[end]content
+[start]recover_picks
+0
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+67
+[end]block_index
+[start]command
+[end]command
+[start]content
+[end]content
+[start]recover_picks
+0
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+68
+[end]block_index
+[start]command
+[end]command
+[start]content
+[end]content
+[start]recover_picks
+0
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+69
+[end]block_index
+[start]command
+[end]command
+[start]content
+[end]content
+[start]recover_picks
+0
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+70
+[end]block_index
+[start]command
+[end]command
+[start]content
+[end]content
+[start]recover_picks
+0
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+71
+[end]block_index
+[start]command
+[end]command
+[start]content
+[end]content
+[start]recover_picks
+0
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+91
+[end]block_index
+[start]command
+[end]command
+[start]content
+[end]content
+[start]recover_picks
 1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+92
+[end]block_index
+[start]command
+'@ define port: 1
+ (undo)
+[end]command
+[start]content
+Port.Delete "1"
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
 [end]delete_solids
 [end]undo_item
 [end]history_fast_undo

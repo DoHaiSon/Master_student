@@ -274,7 +274,6 @@ With Brick
      .Create
 End With
 
-
 '@ define brick: component1:Patch
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
@@ -783,37 +782,32 @@ With FarfieldPlot
      .AddCut "lateral", "90", "1"  
      .AddCut "polar", "90", "1"  
      .StoreSettings
-End With 
+End With
 
 '@ delete shape: component1:Patch
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
-Solid.Delete "component1:Patch" 
-
+Solid.Delete "component1:Patch"
 
 '@ pick edge
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
-Pick.PickEdgeFromId "component1:Subtrate", "1", "1" 
-
+Pick.PickEdgeFromId "component1:Subtrate", "1", "1"
 
 '@ pick mid point
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
-Pick.PickMidpointFromId "component1:Subtrate", "1" 
-
+Pick.PickMidpointFromId "component1:Subtrate", "1"
 
 '@ activate global coordinates
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
 WCS.ActivateWCS "global"
 
-
 '@ activate local coordinates
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
 WCS.ActivateWCS "local"
-
 
 '@ set wcs properties
 
@@ -824,24 +818,20 @@ With WCS
      .SetUVector "1", "0", "0"
 End With
 
-
 '@ align wcs with edge
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
 WCS.AlignWCSWithSelected "EdgeCenter"
-
 
 '@ activate global coordinates
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
 WCS.ActivateWCS "global"
 
-
 '@ clear picks
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
-Pick.ClearAllPicks 
-
+Pick.ClearAllPicks
 
 '@ define brick: component1:Patch
 
@@ -857,12 +847,10 @@ With Brick
      .Create
 End With
 
-
 '@ delete port: port1
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
-Port.Delete "1" 
-
+Port.Delete "1"
 
 '@ define brick: component1:Patch2
 
@@ -878,18 +866,15 @@ With Brick
      .Create
 End With
 
-
 '@ delete shape: component1:Patch
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
-Solid.Delete "component1:Patch" 
-
+Solid.Delete "component1:Patch"
 
 '@ delete shape: component1:Patch2
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
-Solid.Delete "component1:Patch2" 
-
+Solid.Delete "component1:Patch2"
 
 '@ define brick: component1:Patch1
 
@@ -905,7 +890,6 @@ With Brick
      .Create
 End With
 
-
 '@ define brick: component1:solid1
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
@@ -920,12 +904,10 @@ With Brick
      .Create
 End With
 
-
 '@ rename block: component1:solid1 to: component1:Patch2
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
 Solid.Rename "component1:solid1", "Patch2"
-
 
 '@ define brick: component1:Patch3
 
@@ -941,7 +923,6 @@ With Brick
      .Create
 End With
 
-
 '@ define brick: component1:Patch4
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
@@ -955,7 +936,6 @@ With Brick
      .Zrange "0", "0.035" 
      .Create
 End With
-
 
 '@ define brick: component1:Patch5
 
@@ -971,7 +951,6 @@ With Brick
      .Create
 End With
 
-
 '@ define brick: component1:Patch6
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
@@ -985,7 +964,6 @@ With Brick
      .Zrange "0", "0.035" 
      .Create
 End With
-
 
 '@ define brick: component1:Patch7
 
@@ -1001,7 +979,6 @@ With Brick
      .Create
 End With
 
-
 '@ define brick: component1:Patch8
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
@@ -1012,8 +989,521 @@ With Brick
      .Material "Copper (annealed)" 
      .Xrange "8", "10" 
      .Yrange "5", "13" 
-     .Zrange "0", "0" 
+     .Zrange "0", "0.035" 
      .Create
 End With
+
+'@ pick mid point
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+Pick.PickMidpointFromId "component1:Subtrate", "1"
+
+'@ align wcs with point
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+WCS.AlignWCSWithSelected "Point"
+
+'@ rotate wcs
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+WCS.RotateWCS "w", "90.0"
+
+'@ rotate wcs
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+WCS.RotateWCS "w", "90.0"
+
+'@ rotate wcs
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+WCS.RotateWCS "u", "90.0"
+
+'@ rotate wcs
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+WCS.RotateWCS "w", "90.0"
+
+'@ rotate wcs
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+WCS.RotateWCS "w", "90.0"
+
+'@ rotate wcs
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+WCS.RotateWCS "u", "90.0"
+
+'@ rotate wcs
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+WCS.RotateWCS "u", "90.0"
+
+'@ rotate wcs
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+WCS.RotateWCS "w", "90.0"
+
+'@ define brick: component1:Line
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Brick
+     .Reset 
+     .Name "Line" 
+     .Component "component1" 
+     .Material "Copper (annealed)" 
+     .Xrange "-10", "0" 
+     .Yrange "-0.05", "0.05" 
+     .Zrange "0", "0.035" 
+     .Create
+End With
+
+
+'@ define brick: component1:Path9
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Brick
+     .Reset 
+     .Name "Path9" 
+     .Component "component1" 
+     .Material "Copper (annealed)" 
+     .Xrange "-30", "-10" 
+     .Yrange "-5", "5" 
+     .Zrange "0", "0.035" 
+     .Create
+End With
+
+'@ rename block: component1:Patch8 to: component1:Path8
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+Solid.Rename "component1:Patch8", "Path8"
+
+'@ rename block: component1:Patch7 to: component1:Path7
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+Solid.Rename "component1:Patch7", "Path7"
+
+'@ rename block: component1:Patch6 to: component1:Path6
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+Solid.Rename "component1:Patch6", "Path6"
+
+'@ rename block: component1:Patch5 to: component1:Path5
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+Solid.Rename "component1:Patch5", "Path5"
+
+'@ rename block: component1:Patch4 to: component1:Path4
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+Solid.Rename "component1:Patch4", "Path4"
+
+'@ rename block: component1:Patch3 to: component1:Path3
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+Solid.Rename "component1:Patch3", "Path3"
+
+'@ rename block: component1:Patch2 to: component1:Path2
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+Solid.Rename "component1:Patch2", "Path2"
+
+'@ rename block: component1:Patch1 to: component1:Path1
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+Solid.Rename "component1:Patch1", "Path1"
+
+'@ boolean add shapes: component1:Path1, component1:Path2
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+Solid.Add "component1:Path1", "component1:Path2"
+
+'@ boolean add shapes: component1:Path1, component1:Path3
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+Solid.Add "component1:Path1", "component1:Path3"
+
+'@ boolean add shapes: component1:Path1, component1:Path4
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+Solid.Add "component1:Path1", "component1:Path4"
+
+'@ boolean add shapes: component1:Path1, component1:Path5
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+Solid.Add "component1:Path1", "component1:Path5"
+
+'@ boolean add shapes: component1:Path1, component1:Path6
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+Solid.Add "component1:Path1", "component1:Path6"
+
+'@ boolean add shapes: component1:Path1, component1:Path7
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+Solid.Add "component1:Path1", "component1:Path7"
+
+'@ boolean add shapes: component1:Path1, component1:Path8
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+Solid.Add "component1:Path1", "component1:Path8"
+
+'@ boolean add shapes: component1:Path1, component1:Path9
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+Solid.Add "component1:Path1", "component1:Path9"
+
+'@ boolean add shapes: component1:Path1, component1:Line
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+Solid.Add "component1:Path1", "component1:Line"
+
+'@ pick face
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+Pick.PickFaceFromId "component1:Path1", "6"
+
+'@ define port: 1
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Port 
+     .Reset 
+     .PortNumber "1" 
+     .Label "" 
+     .Folder "" 
+     .NumberOfModes "1" 
+     .AdjustPolarization "False" 
+     .PolarizationAngle "0.0" 
+     .ReferencePlaneDistance "0" 
+     .TextSize "50" 
+     .TextMaxLimit "0" 
+     .Coordinates "Picks" 
+     .Orientation "positive" 
+     .PortOnBound "False" 
+     .ClipPickedPortToBound "False" 
+     .Xrange "20", "20" 
+     .Yrange "-1.19", "1.19" 
+     .Zrange "0", "0.035" 
+     .XrangeAdd "0.0", "0.0" 
+     .YrangeAdd "2*2.38", "2*2.38" 
+     .ZrangeAdd "0.787", "6*0.787" 
+     .SingleEnded "False" 
+     .WaveguideMonitor "False" 
+     .Create 
+End With
+
+'@ define monitor: e-field (f=2.4)
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Monitor 
+     .Reset 
+     .Name "e-field (f=2.4)" 
+     .Dimension "Volume" 
+     .Domain "Frequency" 
+     .FieldType "Efield" 
+     .MonitorValue "2.4" 
+     .UseSubvolume "False" 
+     .Coordinates "Structure" 
+     .SetSubvolume "-20", "20", "-20", "20", "-0.822", "4.757" 
+     .SetSubvolumeOffset "0.0", "0.0", "0.0", "0.0", "0.0", "0.0" 
+     .Create 
+End With
+
+'@ define monitor: h-field (f=2.4)
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Monitor 
+     .Reset 
+     .Name "h-field (f=2.4)" 
+     .Dimension "Volume" 
+     .Domain "Frequency" 
+     .FieldType "Hfield" 
+     .MonitorValue "2.4" 
+     .UseSubvolume "False" 
+     .Coordinates "Structure" 
+     .SetSubvolume "-20", "20", "-20", "20", "-0.822", "4.757" 
+     .SetSubvolumeOffset "0.0", "0.0", "0.0", "0.0", "0.0", "0.0" 
+     .Create 
+End With
+
+'@ define farfield monitor: farfield (f=2.4)
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Monitor 
+     .Reset 
+     .Name "farfield (f=2.4)" 
+     .Domain "Frequency" 
+     .FieldType "Farfield" 
+     .MonitorValue "2.4" 
+     .ExportFarfieldSource "False" 
+     .UseSubvolume "False" 
+     .Coordinates "Structure" 
+     .SetSubvolume "-20", "20", "-20", "20", "-0.822", "4.757" 
+     .SetSubvolumeOffset "10", "10", "10", "10", "10", "10" 
+     .SetSubvolumeOffsetType "FractionOfWavelength" 
+     .Create 
+End With
+
+'@ define monitor: e-field (f=7)
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Monitor 
+     .Reset 
+     .Name "e-field (f=7)" 
+     .Dimension "Volume" 
+     .Domain "Frequency" 
+     .FieldType "Efield" 
+     .MonitorValue "7" 
+     .UseSubvolume "False" 
+     .Coordinates "Structure" 
+     .SetSubvolume "-20", "20", "-20", "20", "-0.822", "4.757" 
+     .SetSubvolumeOffset "0.0", "0.0", "0.0", "0.0", "0.0", "0.0" 
+     .Create 
+End With
+
+'@ define monitor: h-field (f=7)
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Monitor 
+     .Reset 
+     .Name "h-field (f=7)" 
+     .Dimension "Volume" 
+     .Domain "Frequency" 
+     .FieldType "Hfield" 
+     .MonitorValue "7" 
+     .UseSubvolume "False" 
+     .Coordinates "Structure" 
+     .SetSubvolume "-20", "20", "-20", "20", "-0.822", "4.757" 
+     .SetSubvolumeOffset "0.0", "0.0", "0.0", "0.0", "0.0", "0.0" 
+     .Create 
+End With
+
+'@ define farfield monitor: farfield (f=7)
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Monitor 
+     .Reset 
+     .Name "farfield (f=7)" 
+     .Domain "Frequency" 
+     .FieldType "Farfield" 
+     .MonitorValue "7" 
+     .ExportFarfieldSource "False" 
+     .UseSubvolume "False" 
+     .Coordinates "Structure" 
+     .SetSubvolume "-20", "20", "-20", "20", "-0.822", "4.757" 
+     .SetSubvolumeOffset "10", "10", "10", "10", "10", "10" 
+     .SetSubvolumeOffsetType "FractionOfWavelength" 
+     .Create 
+End With
+
+'@ delete monitors
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+Monitor.Delete "e-field (f=2.4)" 
+Monitor.Delete "farfield (f=2.4)" 
+Monitor.Delete "h-field (f=2.4)" 
+
+'@ define frequency range
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+Solver.FrequencyRange "2", "10" 
+
+
+'@ define monitor: loss (f=6)
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Monitor 
+     .Reset 
+     .Name "loss (f=6)" 
+     .Dimension "Volume" 
+     .Domain "Frequency" 
+     .FieldType "Powerloss" 
+     .MonitorValue "7" 
+     .Create 
+End With 
+
+
+'@ define monitor: loss (f=7)
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Monitor 
+     .Delete "loss (f=6)" 
+End With 
+With Monitor 
+     .Reset 
+     .Name "loss (f=7)" 
+     .Dimension "Volume" 
+     .Domain "Frequency" 
+     .FieldType "Powerloss" 
+     .MonitorValue "7" 
+     .Create 
+End With 
+
+
+'@ define frequency range
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+Solver.FrequencyRange "3", "8" 
+
+
+'@ define monitor: h-field (f=6.2)
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Monitor 
+     .Delete "h-field (f=7)" 
+End With 
+With Monitor 
+     .Reset 
+     .Name "h-field (f=6.2)" 
+     .Dimension "Volume" 
+     .Domain "Frequency" 
+     .FieldType "Hfield" 
+     .MonitorValue "6.2" 
+     .UseSubvolume "False" 
+     .Coordinates "Structure" 
+     .SetSubvolume "-20", "20", "-20", "20", "-0.82200000000000006", "4.7570000000000006" 
+     .SetSubvolumeOffset "0.0", "0.0", "0.0", "0.0", "0.0", "0.0" 
+     .Create 
+End With 
+
+
+'@ define monitor: e-field (f=6.2)
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Monitor 
+     .Delete "e-field (f=7)" 
+End With 
+With Monitor 
+     .Reset 
+     .Name "e-field (f=6.2)" 
+     .Dimension "Volume" 
+     .Domain "Frequency" 
+     .FieldType "Efield" 
+     .MonitorValue "6.2" 
+     .UseSubvolume "False" 
+     .Coordinates "Structure" 
+     .SetSubvolume "-20", "20", "-20", "20", "-0.82200000000000006", "4.7570000000000006" 
+     .SetSubvolumeOffset "0.0", "0.0", "0.0", "0.0", "0.0", "0.0" 
+     .Create 
+End With 
+
+
+'@ define farfield monitor: farfield (f=6.2)
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Monitor 
+     .Delete "farfield (f=7)" 
+End With 
+With Monitor 
+     .Reset 
+     .Name "farfield (f=6.2)" 
+     .Domain "Frequency" 
+     .FieldType "Farfield" 
+     .MonitorValue "6.2" 
+     .ExportFarfieldSource "False" 
+     .UseSubvolume "False" 
+     .Coordinates "Structure" 
+     .SetSubvolume "-20", "20", "-20", "20", "-0.82200000000000006", "4.7570000000000006" 
+     .SetSubvolumeOffset "10", "10", "10", "10", "10", "10" 
+     .SetSubvolumeOffsetType "FractionOfWavelength" 
+     .Create 
+End With 
+
+
+'@ define monitor: loss (f=6.2)
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Monitor 
+     .Delete "loss (f=7)" 
+End With 
+With Monitor 
+     .Reset 
+     .Name "loss (f=6.2)" 
+     .Dimension "Volume" 
+     .Domain "Frequency" 
+     .FieldType "Powerloss" 
+     .MonitorValue "6.2" 
+     .Create 
+End With 
+
+
+'@ define monitor: h-field (f=3.5)
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Monitor 
+     .Delete "h-field (f=5)" 
+End With 
+With Monitor 
+     .Reset 
+     .Name "h-field (f=3.5)" 
+     .Dimension "Volume" 
+     .Domain "Frequency" 
+     .FieldType "Hfield" 
+     .MonitorValue "3.5" 
+     .UseSubvolume "False" 
+     .Coordinates "Free" 
+     .SetSubvolume "0.0", "0.0", "0.0", "0.0", "0.0", "0.0" 
+     .SetSubvolumeOffset "0.0", "0.0", "0.0", "0.0", "0.0", "0.0" 
+     .Create 
+End With 
+
+
+'@ define monitor: loss (f=3.5)
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Monitor 
+     .Delete "loss (f=5)" 
+End With 
+With Monitor 
+     .Reset 
+     .Name "loss (f=3.5)" 
+     .Dimension "Volume" 
+     .Domain "Frequency" 
+     .FieldType "Powerloss" 
+     .MonitorValue "3.5" 
+     .Create 
+End With 
+
+
+'@ define monitor: e-field (f=3.5)
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Monitor 
+     .Delete "e-field (f=5)" 
+End With 
+With Monitor 
+     .Reset 
+     .Name "e-field (f=3.5)" 
+     .Dimension "Volume" 
+     .Domain "Frequency" 
+     .FieldType "Efield" 
+     .MonitorValue "3.5" 
+     .UseSubvolume "False" 
+     .Coordinates "Free" 
+     .SetSubvolume "0.0", "0.0", "0.0", "0.0", "0.0", "0.0" 
+     .SetSubvolumeOffset "0.0", "0.0", "0.0", "0.0", "0.0", "0.0" 
+     .Create 
+End With 
+
+
+'@ define farfield monitor: farfield (f=3.5)
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Monitor 
+     .Delete "farfield (f=5)" 
+End With 
+With Monitor 
+     .Reset 
+     .Name "farfield (f=3.5)" 
+     .Domain "Frequency" 
+     .FieldType "Farfield" 
+     .MonitorValue "3.5" 
+     .ExportFarfieldSource "False" 
+     .UseSubvolume "False" 
+     .Coordinates "Structure" 
+     .SetSubvolume "-20", "20", "-20", "20", "-0.82200000000000006", "4.7570000000000006" 
+     .SetSubvolumeOffset "10", "10", "10", "10", "10", "10" 
+     .SetSubvolumeOffsetType "FractionOfWavelength" 
+     .Create 
+End With 
 
 

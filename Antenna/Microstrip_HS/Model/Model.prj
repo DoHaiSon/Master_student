@@ -3,7 +3,7 @@
 [Author]
 HaiSon
 [Mesh Cells]
-
+86,950
 [Mesh Type]
 Hexahedral
 [Last Problem Type]
@@ -13,5 +13,7 @@ HF Time Domain
 [Last Solver Type Abb]
 t
 [Results]
-Unavailable
+Time Domain: S-Parameter
+[Modeler Unique ID]
+5:microstrip_hs.cst?22c3f9635044e26bc68aec3a9de67d23?32086:numberofparameters=1:port=1>mode=1>zre=0>zim=0:::l
 [Comment]
