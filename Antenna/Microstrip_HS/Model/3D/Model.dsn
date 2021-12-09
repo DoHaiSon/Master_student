@@ -38,9 +38,9 @@ PortModeConsState: 0
 
 
 *** newmonitor
-monname: "farfield (f=3.5)"
+monname: "farfield (f=6.2)"
 nmonfrequencies: 1
-monfrequencies: "3.5" 
+monfrequencies: "6.2000000000000002" 
 montype: 18
 mondomain: 1
 mon_fmin: ""
@@ -49,9 +49,9 @@ mon_nfSteps: ""
 *** endmonitor
 
 *** newmonitor
-monname: "farfield (f=6.2)"
+monname: "farfield (f=3.5)"
 nmonfrequencies: 1
-monfrequencies: "6.2000000000000002" 
+monfrequencies: "3.5" 
 montype: 18
 mondomain: 1
 mon_fmin: ""

@@ -1,5 +1,5 @@
 MWS Result File Version 20150206
-size=i:110
+size=i:112
 
 type=s:DATA_FOLDER
 problemclass=s::8:1000
@@ -1205,4 +1205,30 @@ result=s:1
 parametric=s:P
 treepath=s:1D Results\AutomaticRunInformation
 files=s:AutomaticRunInformation
+
+type=s:FARFIELDPOLAR
+subtype=s:farfield polar linear
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:solverstart
+result=s:0
+treepath=s:Farfields\farfield (f=3.5) [1]\farfield (f=3.5) [1]
+files=s:farfield (f=3.5) [1].sig
+xlabel=s:Theta / Degree
+ylabel=s:dBi
+title=s:Farfield Directivity Phi (Phi=90)
+
+type=s:FARFIELDPOLAR
+subtype=s:farfield polar linear
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:solverstart
+result=s:0
+treepath=s:Farfields\farfield (f=6.2) [1]\farfield (f=6.2) [1]
+files=s:farfield (f=6.2) [1].sig
+xlabel=s:Theta / Degree
+ylabel=s:dBi
+title=s:Farfield Directivity Phi (Phi=90)
 
